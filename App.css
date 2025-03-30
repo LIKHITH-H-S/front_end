@@ -1,0 +1,112 @@
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1abc9c, #3498db);
+  color: white;
+  user-select: none;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/hero-bg.png') center/cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.text-container {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#emoji {
+  display: block;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.browser {
+  border-radius: 12px;
+  max-width: 90%;
+  height: 420px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.browser-chrome {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: #e8e8e8;
+  padding: 10px;
+}
+
+.browser-actions {
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 6px;
+  box-shadow: 20px 0 0 yellow, 40px 0 0 green;
+}
+
+video {
+  width: 100%;
+  height: calc(100% - 40px);
+  object-fit: cover;
+  border-radius: 0 0 12px 12px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.note {
+  position: absolute;
+  bottom: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 90%;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
